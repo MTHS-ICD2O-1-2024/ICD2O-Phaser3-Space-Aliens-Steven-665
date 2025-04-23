@@ -12,17 +12,16 @@ class SpashScene extends Phaser.Scene {
   }
 
   init(data) {
-    this.cameras.main.setBackgroundColor('#ffffff')
+    this.cameras.main.setBackgroundColor('ffffff')
   }
 
   preload() {
-    console.log('Spash Scene')
+    console.log('Splash Scene')
   }
-
   create(data) {
   }
-
   update(time, delta) {
+    this.scene.switch("titleScene")
   }
 }
 export default SpashScene
