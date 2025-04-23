@@ -8,7 +8,7 @@
 
 class SpashScene extends Phaser.Scene {
   constructor() {
-    super({ key: 'spashScene' })
+    super({ key: 'splashScene' })
   }
 
   init(data) {
