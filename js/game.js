@@ -22,6 +22,7 @@ const config = {
     arcade: {
       debug: true,
     },
+
   },
   backgroundColor: 0x5f6e7a,
   scale: {
