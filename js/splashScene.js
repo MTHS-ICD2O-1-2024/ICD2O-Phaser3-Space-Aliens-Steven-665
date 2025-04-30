@@ -9,17 +9,16 @@
 class SplashScene extends Phaser.Scene {
   constructor() {
     super({ key: 'splashScene' })
-
     this.splashSceneBackgroundImage = null
   }
 
   init(data) {
-    this.cameras.main.setBackgroundColor('ffffff')
+    this.cameras.main.setBackgroundColor('#ffffff')
   }
 
   preload() {
     console.log('Splash Scene')
-    this.preload.image("splashSceneBackground","./assets/splashSceneImage.png")
+    this.load.image("splashSceneBackground","./assets/splashSceneImage.png")
   }
   create(data) {
     this.splashSceneBackgroundImage = this.add.sprite(
