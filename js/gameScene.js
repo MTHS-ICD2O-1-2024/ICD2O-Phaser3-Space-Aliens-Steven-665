@@ -36,6 +36,22 @@ class GameScene extends Phaser.Scene {
   }
 
   update(time, delta) {
+    const keyLeft0bj = this.input.keyboard.addKey("LEFT")
+    const keyRight0bj = this.input.keyboard.addKey("RIGHT")
+
+    if (keyLeft0bj.isDown === true) {
+      this.ship.x -= 15
+      if (this.ship.x < 0) {
+        this.ship.x = 0
+      }
+    }
+
+    if (keyRight0bj.isDown === true){
+      this.ship.x += 15
+      if (this.ship.x > 1920) {
+        this.ship.x = 1920
+      }
+    }
   }
 }
 
